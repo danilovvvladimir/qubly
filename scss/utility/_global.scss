@@ -1,15 +1,9 @@
-@import "./utility/vars";
-
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
   &:before,
   &:after {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
     box-sizing: border-box;
   }
   &:focus {
@@ -59,6 +53,13 @@ body {
   opacity: 1;
 }
 
+a {
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  color: #000;
+}
+
 img {
   max-width: 100%;
 }
@@ -69,5 +70,26 @@ img {
   height: auto;
 }
 
-@import "./utility/adaptive";
-@import "./modules/header";
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 1200px;
+}
+
+.btn {
+  padding: 4px 24px;
+  text-align: center;
+  background: transparent;
+  color: $accent;
+  border: 1px solid $accent;
+  border-radius: 23px;
+  font-weight: 600;
+
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  font-size: 16px;
+  transition: all 0.6s ease;
+  &:hover {
+    background-color: $accent;
+    color: #fff;
+  }
+}

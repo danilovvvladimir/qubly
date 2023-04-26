@@ -1,6 +1,51 @@
 .header {
+  padding-top: 19px;
+  font-size: 16px;
+  color: #000;
   &__wrapper {
     display: flex;
+    align-items: center;
     justify-content: space-between;
+  }
+  &__info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__menu {
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+  }
+  &__menu-item {
+    margin: 0 20px;
+    position: relative;
+    &::before {
+      content: "";
+      width: 0;
+      height: 2px;
+      background-color: $accent;
+      position: absolute;
+      bottom: -5px;
+      left: -7px;
+      transition: all 0.5s ease;
+    }
+
+    a {
+      transition: all 0.3s ease;
+    }
+    &:hover {
+      a {
+        color: $accent;
+      }
+      &::before {
+        width: calc(100% + 14px);
+      }
+    }
+  }
+  &__btn {
+    margin-left: 20px;
   }
 }
