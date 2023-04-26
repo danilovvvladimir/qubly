@@ -189,6 +189,13 @@ img {
   margin: 0 20px;
   position: relative;
 }
+.header__menu-item-link {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.header__menu-item-link:hover {
+  color: #722ed1;
+}
 .header__menu-item::before {
   content: "";
   width: 0;
@@ -200,21 +207,95 @@ img {
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
-.header__menu-item a {
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-.header__menu-item:hover a {
-  color: #722ed1;
-}
-.header__menu-item:hover::before {
+.header__menu-item:not(.header__menu-item--select):hover::before {
   left: -7px;
   width: calc(100% + 14px);
+}
+.header__menu-item--select .header__menu-item-link {
+  padding-right: 15px;
+  padding-bottom: 5px;
+}
+.header__menu-item--select:hover .header__submenu {
+  display: block;
+}
+.header__menu-item--select:hover::after {
+  top: 40%;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+.header__menu-item--select::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 6px;
+  top: 52%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 0px;
+  background-image: url(../images/icons/arrow-down.svg);
+  background-repeat: no-repeat;
 }
 .header__btn {
   margin-left: 20px;
 }
+.header__submenu {
+  display: none;
+  position: absolute;
+  top: 28px;
+  right: -20px;
+  list-style: none;
+  background-color: #fff;
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+  z-index: 10;
+  border-radius: 5px;
+  -webkit-animation: 0.6s opacitySelect;
+          animation: 0.6s opacitySelect;
+}
+.header__submenu-item {
+  display: block;
+  padding: 5px 10px;
+}
+.header__submenu-item-link {
+  display: block;
+}
+.header__submenu-item:hover .header__submenu-item-link {
+  color: #722ed1;
+}
 
+@-webkit-keyframes opacitySelect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes opacitySelect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes opacityUnselect {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes opacityUnselect {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
 .main {
   padding-top: 12%;
   height: 100vh;

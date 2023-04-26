@@ -25,6 +25,13 @@
   &__menu-item {
     margin: 0 20px;
     position: relative;
+    &-link {
+      transition: all 0.3s ease;
+      &:hover {
+        color: $accent;
+      }
+    }
+
     &::before {
       content: "";
       width: 0;
@@ -36,20 +43,84 @@
       transition: all 0.5s ease;
     }
 
-    a {
-      transition: all 0.3s ease;
-    }
-    &:hover {
-      a {
-        color: $accent;
-      }
+    &:not(.header__menu-item--select):hover {
       &::before {
         left: -7px;
         width: calc(100% + 14px);
       }
     }
   }
+  &__menu-item--select {
+    .header__menu-item-link {
+      padding-right: 15px;
+      padding-bottom: 5px;
+    }
+    &:hover {
+      .header__submenu {
+        display: block;
+      }
+      &::after {
+        top: 40%;
+        transform: rotate(180deg);
+      }
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      width: 10px;
+      height: 6px;
+      top: 52%;
+      transform: translateY(-50%);
+      right: 0px;
+      background-image: url(../images/icons/arrow-down.svg);
+      background-repeat: no-repeat;
+    }
+  }
   &__btn {
     margin-left: 20px;
+  }
+
+  &__submenu {
+    display: none;
+    position: absolute;
+    top: 28px;
+    right: -20px;
+    list-style: none;
+    background-color: #fff;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+    z-index: 10;
+    border-radius: 5px;
+    animation: 0.6s opacitySelect;
+  }
+  &__submenu-item {
+    display: block;
+    padding: 5px 10px;
+    &-link {
+      display: block;
+    }
+    &:hover {
+      .header__submenu-item-link {
+        color: $accent;
+      }
+    }
+  }
+}
+
+@keyframes opacitySelect {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes opacityUnselect {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
   }
 }
