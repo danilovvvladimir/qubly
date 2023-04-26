@@ -81,7 +81,7 @@ img {
 }
 
 .btn {
-  padding: 4px 24px;
+  padding: 10px 26px;
   text-align: center;
   background: transparent;
   color: #722ed1;
@@ -97,11 +97,58 @@ img {
   background-color: #722ed1;
   color: #fff;
 }
+.btn--purple {
+  background-color: #722ed1;
+  color: #fff;
+}
+.btn--white {
+  color: #722ed1;
+  background-color: #fff;
+  border: none;
+}
+
+.info {
+  background-color: #f9f0ff;
+  text-align: center;
+  color: #722ed1;
+  font-weight: 600;
+  border-radius: 20px;
+  display: inline-block;
+  padding: 8px 16px 8px 44px;
+  position: relative;
+}
+.info::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+  color: #160637;
+}
+
+.subtitle {
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+  opacity: 0.5;
+}
 
 .header {
   padding-top: 19px;
   font-size: 16px;
   color: #000;
+  position: absolute;
+  left: 0;
+  right: 0;
 }
 .header__wrapper {
   display: -webkit-box;
@@ -149,7 +196,7 @@ img {
   background-color: #722ed1;
   position: absolute;
   bottom: -5px;
-  left: -7px;
+  left: 50%;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
@@ -161,10 +208,65 @@ img {
   color: #722ed1;
 }
 .header__menu-item:hover::before {
+  left: -7px;
   width: calc(100% + 14px);
 }
 .header__btn {
   margin-left: 20px;
+}
+
+.main {
+  padding-top: 168px;
+  padding-bottom: 168px;
+  background: url("../images/main-bg.svg");
+  background-position: 0 -220px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.main__text {
+  max-width: 530px;
+}
+.main__title {
+  font-size: 50px;
+  line-height: 50px;
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+}
+.main__subtitle {
+  margin-bottom: 30px;
+}
+.main__image {
+  max-width: 472px;
+}
+.main__buttons {
+  width: 320px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.main__info {
+  margin-bottom: 30px;
+}
+.main__info::before {
+  background-image: url(../images/icons/stars.svg);
+}
+.main__info a {
+  color: #722ed1;
+  text-decoration: underline;
 }
 
 /*==========  Desktop First  ==========*/
