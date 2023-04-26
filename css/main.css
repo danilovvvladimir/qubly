@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*:focus {
+  outline: none;
+}
+
+*::-webkit-input-placeholder {
+  color: #c0c0c0;
+  opacity: 1;
+}
+
+*:-moz-placeholder {
+  color: #c0c0c0;
+  opacity: 1;
+}
+
+*::-moz-placeholder {
+  color: #c0c0c0;
+  opacity: 1;
+}
+
+*:-ms-input-placeholder {
+  color: #c0c0c0;
+  opacity: 1;
+}
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid {
+  color: #000;
+}
+
+body input:required:valid,
+body textarea:required:valid {
+  color: #000;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-size: 16px;
+  min-width: 320px;
+  position: relative;
+  line-height: 1.65;
+  font-family: "Open Sans", sans-serif;
+  overflow-x: hidden;
+  opacity: 1;
+}
+
+img {
+  max-width: 100%;
+}
+
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/*==========  Desktop First  ==========*/
+/* Large Devices, Wide Screens */
+/**/
+/* Medium Devices, Desktops */
+/**/
+/* Small Devices, Tablets */
+/**/
+/* Extra Small Devices, Phones */
+/**/
+/* Custom, iPhone Retina */
+/**/
+/*==========  Mobile First  ==========*/
+/* Custom, iPhone Retina */
+/**/
+/* Extra Small Devices, Phones */
+/**/
+/* Small Devices, Tablets */
+/**/
+/* Medium Devices, Desktops */
+/**/
+/* Large Devices, Wide Screens */
+/**/
+.header__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}/*# sourceMappingURL=main.css.map */
