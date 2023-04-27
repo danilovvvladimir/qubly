@@ -4,11 +4,113 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {
+  .container {
+    max-width: 900px;
+  }
+  .benefits__item-subtitle {
+    max-width: 270px;
+  }
+  .about {
+    &__img {
+      width: 80%;
+      margin: 0 auto;
+    }
+    &__textbox {
+      max-width: 440px;
+    }
+  }
+  .footer {
+    &__info-text {
+      display: none;
+    }
+  }
 }
 /**/
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
+  .container {
+    max-width: 700px;
+  }
+  .info {
+    font-size: 14px;
+    line-height: 14px;
+  }
+  .btn {
+    font-size: 16px;
+    padding: 6px 16px;
+  }
+  .main {
+    text-align: center;
+    padding-top: 100px;
+    &__text {
+      max-width: 100%;
+    }
+    &__title {
+      font-size: 40px;
+      line-height: 40px;
+    }
+    &__subtitle {
+      font-size: 14px;
+      line-height: 20px;
+    }
+    &__buttons {
+      max-width: 270px;
+      margin: 0 auto;
+    }
+    &__image {
+      display: none;
+    }
+  }
+  .benefits {
+    &__items {
+      flex-direction: column;
+    }
+    &__item {
+      margin-bottom: 30px;
+    }
+    &__item-subtitle {
+      max-width: 340px;
+    }
+  }
+  .about {
+    &__block {
+      text-align: center;
+      flex-direction: column;
+    }
+    &__imagebox {
+      display: none;
+    }
+  }
+  .reviews {
+    &__companies {
+      flex-wrap: wrap;
+    }
+  }
+  .contact {
+    &__wrapper {
+      flex-direction: column;
+    }
+    &__text {
+      text-align: center;
+    }
+    &__title {
+      font-size: 26px;
+      line-height: 30px;
+    }
+  }
+  .footer {
+    &__wrapper {
+      flex-wrap: wrap;
+    }
+    &__info {
+      width: 100%;
+      max-width: 100%;
+    }
+    &__newsletter {
+      display: none;
+    }
+  }
 }
 /**/
 
