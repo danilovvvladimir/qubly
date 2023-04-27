@@ -38,7 +38,7 @@
   }
   .btn {
     font-size: 16px;
-    padding: 6px 16px;
+    padding: 8px 18px;
   }
   .main {
     text-align: center;
@@ -116,11 +116,146 @@
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
+  .container {
+    max-width: 400px;
+  }
+  .btn {
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+  .header {
+    &__wrapper {
+      flex-direction: column;
+    }
+    &__btn {
+      display: none;
+    }
+    &__menu-item {
+      margin: 0 10px;
+    }
+    &__menu-item-link,
+    &__submenu-item-link {
+      font-size: 14px;
+      line-height: 16px;
+    }
+  }
+  .main {
+    padding-top: 120px;
+    &__title {
+      font-size: 30px;
+      line-height: 30px;
+    }
+  }
+  .benefits {
+    &__title {
+      font-size: 24px;
+      line-height: 24px;
+    }
+    &__subtitle {
+      font-size: 16px;
+      line-height: 16px;
+    }
+  }
+  .reviews {
+    &__wrapper {
+      padding-top: 200px;
+      padding-bottom: 100px;
+    }
+    &__companies {
+      flex-direction: column;
+    }
+    &__companies-item {
+      margin-bottom: 15px;
+    }
+  }
+  .footer {
+    &__info {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    &__icon {
+      width: 20px;
+      height: 20px;
+      margin-right: 5px;
+      margin-left: 5px;
+    }
+    &__list {
+      width: 150px;
+      margin-bottom: 20px;
+    }
+  }
 }
 /**/
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
+  .container {
+    padding: 0 10px;
+    max-width: 320px;
+  }
+  .info {
+    font-size: 12px;
+    line-height: 12px;
+  }
+  .btn {
+    font-size: 14px;
+    line-height: 14px;
+    padding: 6px 10px;
+  }
+  .header {
+    &__wrapper {
+      position: relative;
+      padding: 0 10px;
+    }
+    &__menu {
+      font-size: 10px;
+      line-height: 10px;
+    }
+    &__menu-item {
+      margin: 0 5px;
+    }
+  }
+  .main {
+    padding-top: 140px;
+    &__title {
+      font-size: 18px;
+      line-height: 18px;
+    }
+    &__subtitle {
+      max-width: 250px;
+      margin: 0 auto;
+      margin-bottom: 50px;
+      font-size: 12px;
+      line-height: 12px;
+    }
+    &__buttons {
+      flex-direction: column;
+    }
+    .btn {
+      margin-bottom: 15px;
+    }
+  }
+
+  .reviews {
+    &__quotes-item-quote {
+      font-size: 16px;
+      line-height: 16px;
+    }
+  }
+  .contact {
+    margin-bottom: 100px;
+    &__form-wrapper {
+      width: 100%;
+    }
+    &__partner {
+      width: 110px;
+    }
+  }
+  .form {
+    // display: none;
+    max-width: 280px;
+  }
 }
 /**/
 

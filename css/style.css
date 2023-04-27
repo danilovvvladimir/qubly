@@ -798,7 +798,7 @@ img {
   }
   .btn {
     font-size: 16px;
-    padding: 6px 16px;
+    padding: 8px 18px;
   }
   .main {
     text-align: center;
@@ -875,8 +875,140 @@ img {
 }
 /**/
 /* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  .container {
+    max-width: 400px;
+  }
+  .btn {
+    font-size: 14px;
+    line-height: 14px;
+  }
+  .header__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .header__btn {
+    display: none;
+  }
+  .header__menu-item {
+    margin: 0 10px;
+  }
+  .header__menu-item-link, .header__submenu-item-link {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .main {
+    padding-top: 120px;
+  }
+  .main__title {
+    font-size: 30px;
+    line-height: 30px;
+  }
+  .benefits__title {
+    font-size: 24px;
+    line-height: 24px;
+  }
+  .benefits__subtitle {
+    font-size: 16px;
+    line-height: 16px;
+  }
+  .reviews__wrapper {
+    padding-top: 200px;
+    padding-bottom: 100px;
+  }
+  .reviews__companies {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .reviews__companies-item {
+    margin-bottom: 15px;
+  }
+  .footer__info {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .footer__icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+  .footer__list {
+    width: 150px;
+    margin-bottom: 20px;
+  }
+}
 /**/
 /* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  .container {
+    padding: 0 10px;
+    max-width: 320px;
+  }
+  .info {
+    font-size: 12px;
+    line-height: 12px;
+  }
+  .btn {
+    font-size: 14px;
+    line-height: 14px;
+    padding: 6px 10px;
+  }
+  .header__wrapper {
+    position: relative;
+    padding: 0 10px;
+  }
+  .header__menu {
+    font-size: 10px;
+    line-height: 10px;
+  }
+  .header__menu-item {
+    margin: 0 5px;
+  }
+  .main {
+    padding-top: 140px;
+  }
+  .main__title {
+    font-size: 18px;
+    line-height: 18px;
+  }
+  .main__subtitle {
+    max-width: 250px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    font-size: 12px;
+    line-height: 12px;
+  }
+  .main__buttons {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main .btn {
+    margin-bottom: 15px;
+  }
+  .reviews__quotes-item-quote {
+    font-size: 16px;
+    line-height: 16px;
+  }
+  .contact {
+    margin-bottom: 100px;
+  }
+  .contact__form-wrapper {
+    width: 100%;
+  }
+  .contact__partner {
+    width: 110px;
+  }
+  .form {
+    max-width: 280px;
+  }
+}
 /**/
 /* Custom, iPhone Retina */
 /**/

@@ -70,6 +70,31 @@ img {
   height: auto;
 }
 
+// .hamburger {
+//   display: none;
+//   cursor: pointer;
+//   .line {
+//     width: 24px;
+//     height: 3px;
+//     background-color: $accent;
+//     display: block;
+//     margin: 6px auto;
+//     transition: all 0.3s ease-in-out;
+//     border-radius: 5px;
+//   }
+//   &.is-active .line {
+//     &:nth-child(1) {
+//       transform: translateY(9px) rotate(45deg);
+//     }
+//     &:nth-child(2) {
+//       opacity: 0;
+//     }
+//     &:nth-child(3) {
+//       transform: translateY(-9px) rotate(-45deg);
+//     }
+//   }
+// }
+
 .container {
   margin: 0 auto;
   padding: 0 15px;
