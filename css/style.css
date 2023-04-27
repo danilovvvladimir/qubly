@@ -143,6 +143,14 @@ img {
   opacity: 0.5;
 }
 
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
 .header {
   padding-top: 19px;
   font-size: 16px;
@@ -461,6 +469,55 @@ img {
   font-size: 32px;
   line-height: 40px;
   margin-bottom: 30px;
+}
+
+.reviews {
+  background-image: url(../images/reviews-bg.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.reviews__wrapper {
+  padding-top: 250px;
+  padding-bottom: 170px;
+  text-align: center;
+}
+.reviews__quotes-item-quote {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  margin-bottom: 32px;
+}
+.reviews__quotes-item-image {
+  border-radius: 50%;
+  margin-bottom: 32px;
+}
+.reviews__quotes-item-info {
+  margin-bottom: 64px;
+}
+.reviews__quotes-item-name, .reviews__quotes-item-position {
+  font-size: 16px;
+  line-height: 24px;
+}
+.reviews__companies {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.reviews__companies-item {
+  cursor: pointer;
+}
+.reviews__companies-item path {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.reviews__companies-item:hover path {
+  fill: #160637;
+}
+.reviews__companies-item--active path {
+  fill: #160637;
 }
 
 /*==========  Desktop First  ==========*/

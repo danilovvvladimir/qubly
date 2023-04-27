@@ -1,0 +1,48 @@
+.reviews {
+  background-image: url(../images/reviews-bg.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  &__wrapper {
+    padding-top: 250px;
+    padding-bottom: 170px;
+    text-align: center;
+  }
+  &__quotes-item-quote {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 32px;
+  }
+  &__quotes-item-image {
+    border-radius: 50%;
+    margin-bottom: 32px;
+  }
+  &__quotes-item-info {
+    margin-bottom: 64px;
+  }
+  &__quotes-item-name,
+  &__quotes-item-position {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  &__companies {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__companies-item {
+    cursor: pointer;
+    path {
+      transition: all 0.5s ease;
+    }
+    &:hover {
+      path {
+        fill: $title;
+      }
+    }
+  }
+  &__companies-item--active {
+    path {
+      fill: $title;
+    }
+  }
+}
