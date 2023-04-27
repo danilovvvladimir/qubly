@@ -1,0 +1,55 @@
+.form {
+  padding: 32px 40px;
+  max-width: 428px;
+  border-radius: 4px;
+  margin: 0 auto;
+  background-color: #fff;
+  box-shadow: 4px 4px 12px rgba(137, 137, 162, 0.122);
+  text-align: center;
+  position: relative;
+  z-index: 5;
+  &__input {
+    width: 100%;
+    padding: 16px;
+    color: $title;
+    margin-bottom: 16px;
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
+    &::placeholder {
+      color: #8989a2;
+    }
+  }
+  &__title {
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 16px;
+  }
+  &__btn {
+    padding: 16px;
+    margin-bottom: 16px;
+    width: 100%;
+    border-radius: 5px;
+  }
+  &__google-img {
+    transition: all 0.5s ease;
+    margin-bottom: 16px;
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+  &__login {
+    color: #8989a2;
+    border-top: 1px solid #8989a2;
+    padding-top: 16px;
+  }
+  &__login-link {
+    color: $accent;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  span {
+    display: block;
+    margin-bottom: 16px;
+  }
+}

@@ -26,6 +26,8 @@
     line-height: 24px;
   }
   &__companies {
+    padding-top: 32px;
+    border-top: 1px solid #dec9fa;
     display: flex;
     justify-content: space-between;
   }
