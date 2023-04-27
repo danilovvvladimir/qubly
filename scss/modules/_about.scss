@@ -1,0 +1,40 @@
+.about {
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  &__block {
+    padding-top: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__textbox {
+    max-width: 474px;
+    margin-bottom: 30px;
+    &-info {
+      margin-bottom: 30px;
+      &--product {
+        padding-left: 54px;
+        &::before {
+          width: 25px;
+          height: 25px;
+          background-image: url(../images/icons/product.svg);
+        }
+      }
+      &--engineering {
+        padding-left: 54px;
+        &::before {
+          width: 24px;
+          height: 24px;
+          background-image: url(../images/icons/team.svg);
+        }
+      }
+    }
+    &-title {
+      font-size: 32px;
+      line-height: 40px;
+      margin-bottom: 30px;
+    }
+  }
+}

@@ -126,6 +126,7 @@ img {
           transform: translateY(-50%);
   width: 16px;
   height: 16px;
+  background-repeat: no-repeat;
 }
 
 .title {
@@ -410,6 +411,56 @@ img {
 .benefits__item-subtitle {
   max-width: 305px;
   text-align: center;
+}
+
+.about__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.about__block {
+  padding-top: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.about__textbox {
+  max-width: 474px;
+  margin-bottom: 30px;
+}
+.about__textbox-info {
+  margin-bottom: 30px;
+}
+.about__textbox-info--product {
+  padding-left: 54px;
+}
+.about__textbox-info--product::before {
+  width: 25px;
+  height: 25px;
+  background-image: url(../images/icons/product.svg);
+}
+.about__textbox-info--engineering {
+  padding-left: 54px;
+}
+.about__textbox-info--engineering::before {
+  width: 24px;
+  height: 24px;
+  background-image: url(../images/icons/team.svg);
+}
+.about__textbox-title {
+  font-size: 32px;
+  line-height: 40px;
+  margin-bottom: 30px;
 }
 
 /*==========  Desktop First  ==========*/
