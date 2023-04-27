@@ -1,0 +1,83 @@
+.footer {
+  padding-top: 58px;
+  padding-bottom: 50px;
+  background: #fbfcff;
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__info {
+    max-width: 270px;
+  }
+  &__logo img {
+    margin-bottom: 20px;
+  }
+  &__info-text {
+    margin-bottom: 20px;
+    font-size: 15px;
+    line-height: 20px;
+  }
+  &__icon {
+    margin-right: 5px;
+  }
+
+  &__list {
+    list-style: none;
+  }
+  &__list-title {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  &__list-item {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  &__list-item-link {
+    transition: all 0.3s ease;
+
+    &:hover {
+      text-decoration: underline;
+      color: $accent;
+    }
+  }
+  &__newsletter {
+    &-title {
+      font-size: 18px;
+      margin-bottom: 15px;
+    }
+  }
+  &__form {
+    position: relative;
+  }
+  &__form-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    width: 21px;
+    height: 17px;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    path {
+      transition: all 0.3s ease;
+    }
+    &:hover {
+      path {
+        fill: #550cbb;
+      }
+    }
+  }
+  &__form-input {
+    border: none;
+    width: 200px;
+    padding: 16px 37px 16px 16px;
+    color: $title;
+    border-radius: 4px;
+    box-shadow: 4px 4px 12px rgba(137, 137, 162, 0.122);
+    &::placeholder {
+      color: #8989a2;
+    }
+  }
+}

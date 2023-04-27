@@ -528,6 +528,7 @@ img {
 
 .contact {
   padding-top: 120px;
+  margin-bottom: 200px;
 }
 .contact__wrapper {
   display: -webkit-box;
@@ -666,6 +667,103 @@ img {
 .form span {
   display: block;
   margin-bottom: 16px;
+}
+
+.footer {
+  padding-top: 58px;
+  padding-bottom: 50px;
+  background: #fbfcff;
+}
+.footer__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.footer__info {
+  max-width: 270px;
+}
+.footer__logo img {
+  margin-bottom: 20px;
+}
+.footer__info-text {
+  margin-bottom: 20px;
+  font-size: 15px;
+  line-height: 20px;
+}
+.footer__icon {
+  margin-right: 5px;
+}
+.footer__list {
+  list-style: none;
+}
+.footer__list-title {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.footer__list-item {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.footer__list-item-link {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.footer__list-item-link:hover {
+  text-decoration: underline;
+  color: #722ed1;
+}
+.footer__newsletter-title {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+.footer__form {
+  position: relative;
+}
+.footer__form-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  width: 21px;
+  height: 17px;
+  right: 16px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.footer__form-btn path {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.footer__form-btn:hover path {
+  fill: #550cbb;
+}
+.footer__form-input {
+  border: none;
+  width: 200px;
+  padding: 16px 37px 16px 16px;
+  color: #160637;
+  border-radius: 4px;
+  -webkit-box-shadow: 4px 4px 12px rgba(137, 137, 162, 0.122);
+          box-shadow: 4px 4px 12px rgba(137, 137, 162, 0.122);
+}
+.footer__form-input::-webkit-input-placeholder {
+  color: #8989a2;
+}
+.footer__form-input::-moz-placeholder {
+  color: #8989a2;
+}
+.footer__form-input:-ms-input-placeholder {
+  color: #8989a2;
+}
+.footer__form-input::-ms-input-placeholder {
+  color: #8989a2;
+}
+.footer__form-input::placeholder {
+  color: #8989a2;
 }
 
 /*==========  Desktop First  ==========*/
