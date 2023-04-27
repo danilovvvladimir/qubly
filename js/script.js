@@ -32,3 +32,5 @@ tabsParent.addEventListener("click", (e) => {
     });
   }
 });
+
+new WOW().init();

@@ -40,7 +40,7 @@
       rel="stylesheet" />
 
     <!-- libs -->
-    <link rel="stylesheet" href="libs/jquery.fancybox.min.css" />
+
     <link rel="stylesheet" href="libs/animate.css" />
 
     <!-- main -->
@@ -101,8 +101,11 @@
     <section class="main">
       <div class="container">
         <div class="main__wrapper">
-          <div class="main__text">
-            <div class="info main__info">
+          <div class="main__text wow fadeInLeft" data-wow-duration="1.5s">
+            <div
+              class="info main__info wow pulse infinite"
+              data-wow-delay="1.5s"
+              data-wow-duration="3s">
               v3.1 released. <a href="#">Learn more</a>
             </div>
             <h1 class="title main__title">
@@ -117,7 +120,7 @@
               <a class="btn btn--white" href="#">Learn more</a>
             </div>
           </div>
-          <div class="main__image">
+          <div class="main__image wow fadeInRight" data-wow-duration="1.5s">
             <img src="./images/main-hero.png" alt="hero" />
           </div>
         </div>
@@ -126,7 +129,7 @@
 
     <!-- benefits -->
     <section class="benefits">
-      <div class="container">
+      <div class="container wow fadeIn" data-wow-duration="2s">
         <div class="benefits__wrapper">
           <div class="info benefits__info">Why Qubly</div>
           <h2 class="title benefits__title">
@@ -182,7 +185,7 @@
     <section class="about">
       <div class="container">
         <div class="about__wrapper">
-          <div class="about__block">
+          <div class="about__block wow fadeInLeft" data-wow-duration="2s">
             <div class="about__imagebox">
               <img
                 class="about__img"
@@ -205,7 +208,10 @@
             </div>
           </div>
 
-          <div class="about__block">
+          <div
+            class="about__block wow fadeInRight"
+            data-wow-delay="0.5s"
+            data-wow-duration="2s">
             <div class="about__textbox">
               <div
                 class="info about__textbox-info about__textbox-info--engineering">
@@ -550,7 +556,7 @@
     <section class="contact">
       <div class="container">
         <div class="contact__wrapper">
-          <div class="contact__text">
+          <div class="contact__text wow fadeInLeft" data-wow-duration="1.5s">
             <h2 class="title contact__title">
               See why the world's best companies use Qubly to become truly
               data-driven.
@@ -583,7 +589,9 @@
               </div>
             </div>
           </div>
-          <div class="contact__form-wrapper">
+          <div
+            class="contact__form-wrapper wow fadeInRight"
+            data-wow-duration="1.5s">
             <form class="form contact__form">
               <h3 class="form__title">Sign Up</h3>
               <input
@@ -757,8 +765,7 @@
       </div>
     </footer>
 
-    <script src="libs/jquery/dist/jquery.min.js"></script>
-    <script src="libs/jquery.fancybox.min.js"></script>
+    <!-- <script src="libs/jquery/dist/jquery.min.js"></script> -->
     <script src="libs/wow.min.js"></script>
 
     <script src="js/script.js"></script>
